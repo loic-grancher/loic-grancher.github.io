@@ -10,6 +10,11 @@ export default {
             },
             backgroundImage: {
                 'forestBackground': "url('/src/assets/terre4.jpg')",
+                'opteamImage': "url('/src/assets/opteam-larger.png')",
+                'professeurImage': "url('/src/assets/classroom.jpg')",
+                'flagsImage': "url('/src/assets/flags.jpg')",
+                'ottawaWinterImage': "url('/src/assets/ottawa_winter.jpg')",
+            
                
               }
         },
