@@ -1,0 +1,56 @@
+---
+import PageLayout from "../layout/PageLayout.astro"
+import Card from "../components/Card.astro"
+import opteamImage from "../assets/opteam-larger.png"
+
+const title="Parcours"
+---
+<PageLayout title={title}>
+    <Card 
+        title="Stagiaire en Developpement Web & Communication"
+        location="Opteam Communication - Le Havre"
+        year="2023-2024"
+        item1="Création et mise à jour de pages web sur Wordpress"
+        item2="Traduction et mise en page de documents de communication"
+        item3="Conception de maquette pour sites web (Adobe XD, Illustrator, Photoshop)"
+        item4="Customisation de fonctions wordpress via PHP"
+        imgStyle="background-image: url('../src/assets/opteam-larger.png'); background-repeat: no-repeat;"
+        order="order: 0"
+    />
+
+    <Card 
+    title="Professeur des écoles"
+    location="Education Nationale"
+    year="2020-2023"
+    item1="Préparation et organisation des cours"
+    item2="Suivi des élèves au quotidien et gestion de l'administratif de la classe"
+    item3="Echanges avec l'équipe pédagogique et les parents d'élèves"
+    item4="Elaboration de contenu pédagogique"
+    imgStyle="background-image: url('../src/assets/classroom.jpg'); background-repeat: no-repeat;"
+    order="order: 1"
+/>
+
+<Card 
+title="Formateur de français langue étrangère (FLE)"
+location="Comité d'Action et de Promotion Sociale - CFA de Montivilliers"
+year="2019-2020"
+item1="Préparation et organisation des cours"
+item2="Suivi des apprenants"
+item3="Aide à l'insertion professionnelle"
+item4="Coordination avec les formations du CFA et l'équipe pédagogique"
+imgStyle="background-image: url('../src/assets/flags.jpg'); background-repeat: no-repeat;"
+order="order: 0"
+/>
+
+<Card 
+title="Assistant de français à l'étranger"
+location="Carleton University à Ottawa (Canada)"
+year="2018-2019"
+item1="Mise en place de projets autours de la promotion du français"
+item2="Suivi et soutien des étudiants au sein du département de Français"
+item3="Sensibilisation à la culture française"
+item4="Gestion des réseaux sociaux du département de français"
+imgStyle="background-image: url('../src/assets/ottawa_winter.jpg'); background-repeat: no-repeat;"
+order="order: 1"
+/>
+</PageLayout>

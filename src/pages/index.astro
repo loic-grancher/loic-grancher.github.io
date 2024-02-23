@@ -1,16 +1,50 @@
 ---
-
+import PageLayout from "../layout/PageLayout.astro"
+import IndexListItem from "../components/IndexListItem.astro"
+const title="Accueil & Contact" 
+import { Image } from "astro:assets"
+import linkedinLogo from "../assets/logos/LinkedIn_icon.svg.png"
+import astroLogo from "../assets/logos/astro.png"
+import tailwindLogo from "../assets/logos/tailwind.png"
+import typescriptLogo from "../assets/logos/typescript.png"
+import photoProfil from "../assets/photo_profil.png"
 ---
+<PageLayout title={title}>
+    <div class="grid lg:grid-cols-2 p-10" >
+        <div class=" flex flex-col items-center items-center text-xl pt-10 ">
+            <ul class="flex flex-col gap-8 text-2xl">
+                <IndexListItem text="Loïc Grancher" icon="👾" />
+                <IndexListItem text="Developpeur Web Junior"  icon="💼"/>
+                <IndexListItem text="loic.grancher@gmail.com" icon="📧"/>
+                <IndexListItem text="06 79 95 36 43" icon="📞" />
+                <IndexListItem text="17 rue Louis Philippe - Le Havre" src="./Image/logos/home.png" icon="🏠"/>
+                <a href="https://www.linkedin.com/in/loic-grancher-3b586310b?lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base_contact_details%3Bn0SSOYpVSNSvW1LQ5OM%2B3g%3D%3D">
+                    <div class="flex items-center justify-center border-2 px-3 py-2 rounded w-max hover:bg-white hover:text-black gap-3">
+                        <Image src={linkedinLogo} alt="linkedin logo" width="40"/>
+                        <p>Linkedin</p>
+                    </div>
+                </a>
+            </ul>
+            <div class="flex gap-3 pl-30 py-10 opacity-60 items-center" >
+                <p>Site réalisé avec</p>
+                <Image src={astroLogo} alt="" width="40" />
+                <Image src={tailwindLogo} alt="" width="40"/>
+                <Image src={typescriptLogo} alt="" width="40"/>
+            </div>
+        </div>
+        <div class="px-10 flex justify-center lg:-mt-20">
+            <Image src={photoProfil} alt="" class={"max-w-sm object-scale-down"}>
+        </div>
+    </div>
 
-<html lang="en">
-	<head>
-		<meta charset="utf-8" />
-		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-		<meta name="viewport" content="width=device-width" />
-		<meta name="generator" content={Astro.generator} />
-		<title>Astro</title>
-	</head>
-	<body>
-		<h1>Astro</h1>
-	</body>
-</html>
+
+
+
+
+
+
+
+
+
+
+</PageLayout>

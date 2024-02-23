@@ -1,0 +1,29 @@
+---
+import PageLayout from "../layout/PageLayout.astro";
+import CardPortfolio from "../components/CardPortfolio.astro";
+const title = "Portfolio";
+---
+
+<PageLayout title={title}>
+    <section>
+        <CardPortfolio
+            title="Site de la semaine des métiers de l'auto pour l'ANFA"
+            link="https://www.semaine-services-auto.com"
+            technology="Wordpress & Divi theme"
+            year="2023"
+            item1="Réalisé dans le cadre de mon stage chez Opteam Communication"
+            imgStyle="background-image: url('../../public/img/anfa_capture.png'); background-repeat: no-repeat;"
+            order="order: 0"
+        />
+        <CardPortfolio
+            title="1ere version de mon site CV (pur HTML/CSS/JS)"
+            link="https://loic-grancher.netlify.app/"
+            technology="HTML CSS JS (no framework)"
+            year="2023"
+            item1=""
+            imgStyle="background-image: url('img/background_forest.jpg'); background-repeat: no-repeat;"
+            order="order: 1"
+        />
+        
+    </section>
+</PageLayout>

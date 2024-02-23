@@ -1,0 +1,56 @@
+---
+import PageLayout from "../layout/PageLayout.astro"
+import SkillGrid from "../components/skills/SkillGrid.astro"
+import SkillItem from "../components/skills/SkillItem.astro"
+const title="Compétences"
+---
+<PageLayout title={title}>
+    <div class="grid lg:grid-cols-3 gap-10 p-10">
+        <SkillGrid title="Langages">
+            <SkillItem icon="./img/logos/html.png" skill="HTML"/>
+            <SkillItem icon="./img/logos/css.png" skill="CSS"/>
+            <SkillItem icon="./img/logos/js.png" skill="JavaScript"/>
+            <SkillItem icon="./img/logos/php.png" skill="PHP"/>
+            <SkillItem icon="./img/logos/python.png" skill="Python"/>
+            <SkillItem icon="./img/logos/typescript.png" skill="Typescript"/>
+        </SkillGrid>
+
+        <SkillGrid title="Frameworks">
+            <SkillItem icon="./img/logos/symfony.png" skill="Symfony"/>
+            <SkillItem icon="./img/logos/react.png" skill="React"/>
+            <SkillItem icon="./img/logos/express.png" skill="Express"/>
+            <SkillItem icon="./img/logos/django.png" skill="Django"/>
+            <SkillItem icon="./img/logos/wordpress.png" skill="Wordpress"/>
+            <SkillItem icon="./img/logos/astro.png" skill="Astro"/>
+            <SkillItem icon="./img/logos/tailwind.png" skill="Tailwind"/>
+        </SkillGrid>
+
+        <SkillGrid title="Base de données">
+            <SkillItem icon="./img/logos/mysql.png" skill="MySQL"/>
+            <SkillItem icon="./img/logos/mongodb.png" skill="MongoDB"/>
+        </SkillGrid>
+
+        <SkillGrid title="Autres compétences informatique">
+            <SkillItem icon="./img/logos/xd.png" skill="Adobe XD"/>
+            <SkillItem icon="./img/logos/photoshop.png" skill="Photoshop"/>
+            <SkillItem icon="./img/logos/illustrator.png" skill="Illustrator"/>
+            <SkillItem icon="./img/logos/studioOne.png" skill="Studio One"/>
+            <SkillItem icon="./img/logos/cubase.png" skill="Cubase"/>
+        </SkillGrid>
+
+        <SkillGrid title="Autres compétences générales">
+            <SkillItem icon="./img/logos/english.png" skill="Anglais C2"/>
+            <SkillItem icon="./img/logos/guitare.png" skill="Guitare"/>
+        </SkillGrid>
+
+        <SkillGrid title="En cours d'apprentissage">
+            <SkillItem icon="./img/logos/c_sharp.png" skill="C#"/>
+            <SkillItem icon="./img/logos/angular.png" skill="Angular"/>
+        </SkillGrid>
+    </div>
+
+
+    
+
+
+</PageLayout>

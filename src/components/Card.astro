@@ -1,0 +1,23 @@
+---
+const { title, location, year, item1, item2, item3, item4, imgStyle, order } = Astro.props
+---
+
+<div class="flex justify-center py-10 ">
+    <div class="grid lg:grid-cols-2 bg-center max-w-5xl shadow-lg mx-10" style={imgStyle}>
+        <div class="bg-black bg-opacity-80 p-10 flex flex-col gap-3 text-lg" style={order} >
+            <h2 class="font-medium">{title}</h2>
+            <p>{location}</p>
+            <p>{year}</p>
+            <ul class="flex flex-col gap-3">
+                <li>✅ {item1}</li>
+                <li>✅ {item2}</li>
+                <li>✅ {item3}</li>
+                <li>✅ {item4}</li>
+            </ul>
+        </div>
+        <div>
+            <!-- section vide -->
+        </div>
+    </div>
+
+</div>

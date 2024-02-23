@@ -1,0 +1,38 @@
+---
+const { title } = Astro.props;
+import Header from "../components/Header.astro";
+import Footer from "../components/Footer.astro";
+import BaseHead from "../components/Basehead.astro";
+import Title from "../components/Title.astro";
+import { ViewTransitions } from "astro:transitions";
+import backgroundImage from "../assets/terre4.jpg"
+import { Image } from 'astro:assets';
+import favicon from "../assets/logos/favicon.png"
+
+
+
+---
+
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <BaseHead title={title}/>
+        <link rel="icon" type="image/x-icon" href={favicon.src} >
+        <ViewTransitions />
+    </head>
+    <body class="bg-black font-sans font-thin text-white bg-forestBackground"  >
+    <Header/>
+    <Title title={title} />
+
+    
+        
+        <slot />
+
+    </body>
+
+
+    <Footer/>
+</html>
+

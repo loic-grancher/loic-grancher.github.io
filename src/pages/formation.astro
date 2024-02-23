@@ -1,0 +1,41 @@
+---
+import PageLayout from "../layout/PageLayout.astro"
+const title="Formation"
+import Card from "../components/Card.astro"
+---
+<PageLayout title={title}>
+    <Card 
+        title="Formation développeur - intégrateur web"
+        location="Scholarfab Le Havre"
+        year="2023-2024"
+        item1="Implémentation et gestion de site web"
+        item2="Front end (HTML/CSS/JS) + back end (PHP/NodeJS)"
+        item3="Frameworks: Symfony, React, Express, Wordpress"
+        item4="Webdesign (Photoshop, Illustrator, XD)"
+        imgStyle="background-image: url('../../public/img/webdesign.jpg'); background-repeat: no-repeat;"
+        order="order: 0"
+    />
+    <Card 
+        title="Master - Sciences du langage (Spécialisation Français langue étrangère)"
+        location="Université de Caen (M1) Université de Tampere en Finlande (M2)"
+        year="2019"
+        item1="Communication internationale"
+        item2="Rédaction de devoirs universitaires en anglais"
+        item3="Rédaction d'un mémoire sur l'apprentissage des langues et des nouvelles technologies"
+        item4="Pedagogie et sciences de l'éducation"
+        imgStyle="background-image: url('../../public/img/tampere_winter.jpg'); background-repeat: no-repeat;"
+        order="order: 1"
+    />
+    <Card 
+        title="Licence Anglais (LLCE)"
+        location="Université du Havre (L1-L3) / Université Leeds Beckett - Angleterre (L3)"
+        year="2014-2017"
+        item1="Pratique quotidienne de l'anglais (milieu universitaire et vie de tous les jours)"
+        item2="Rédaction de devoirs universitaires en anglais"
+        item3="Traduction français-anglais"
+        item4="Compétences en communication orale et écrite"
+        imgStyle="background-image: url('../../public/img/leeds_beckett.jpg'); background-repeat: no-repeat;"
+        order="order: 0"
+    />
+    
+</PageLayout>
