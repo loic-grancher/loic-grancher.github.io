@@ -2,50 +2,82 @@
 import PageLayout from "../layout/PageLayout.astro"
 import SkillGrid from "../components/skills/SkillGrid.astro"
 import SkillItem from "../components/skills/SkillItem.astro"
+import html from "../assets/logos/html.png"
+import css from "../assets/logos/css.png"
+import js from "../assets/logos/js.png"
+import php from "../assets/logos/php.png"
+import python from "../assets/logos/python.png"
+import typescript from "../assets/logos/typescript.png"
+import symfony from "../assets/logos/symfony.png"
+import react from "../assets/logos/react.png"
+import express from "../assets/logos/express.png"
+import django from "../assets/logos/django.png"
+import wordpress from "../assets/logos/wordpress.png"
+import astro from "../assets/logos/astro.png"
+import tailwind from "../assets/logos/tailwind.png"
+import mysql from "../assets/logos/mysql.png"
+import mongodb from "../assets/logos/mongodb.png"
+import xd from "../assets/logos/xd.png"
+import photoshop from "../assets/logos/photoshop.png"
+import illustrator from "../assets/logos/illustrator.png"
+import studioOne from "../assets/logos/studioOne.png"
+import cubase from "../assets/logos/cubase.png"
+import english from "../assets/logos/english.png"
+import guitar from "../assets/logos/guitare.png"
+import cSharp from "../assets/logos/c_sharp.png"
+import angular from "../assets/logos/angular.png"
+import laravel from "../assets/logos/laravel.png"
+import next from "../assets/logos/next.png"
+
+
+
 const title="Compétences"
 ---
 <PageLayout title={title}>
     <div class="grid lg:grid-cols-3 gap-10 p-10">
         <SkillGrid title="Langages">
-            <SkillItem icon="./img/logos/html.png" skill="HTML"/>
-            <SkillItem icon="./img/logos/css.png" skill="CSS"/>
-            <SkillItem icon="./img/logos/js.png" skill="JavaScript"/>
-            <SkillItem icon="./img/logos/php.png" skill="PHP"/>
-            <SkillItem icon="./img/logos/python.png" skill="Python"/>
-            <SkillItem icon="./img/logos/typescript.png" skill="Typescript"/>
+            <SkillItem icon={html.src} skill="HTML"/>
+            <SkillItem icon={css.src} skill="CSS"/>
+            <SkillItem icon={js.src} skill="JavaScript"/>
+            <SkillItem icon={php.src} skill="PHP"/>
+            <SkillItem icon={python.src} skill="Python"/>
+            <SkillItem icon={typescript.src} skill="Typescript"/>
         </SkillGrid>
 
         <SkillGrid title="Frameworks">
-            <SkillItem icon="./img/logos/symfony.png" skill="Symfony"/>
-            <SkillItem icon="./img/logos/react.png" skill="React"/>
-            <SkillItem icon="./img/logos/express.png" skill="Express"/>
-            <SkillItem icon="./img/logos/django.png" skill="Django"/>
-            <SkillItem icon="./img/logos/wordpress.png" skill="Wordpress"/>
-            <SkillItem icon="./img/logos/astro.png" skill="Astro"/>
-            <SkillItem icon="./img/logos/tailwind.png" skill="Tailwind"/>
+            <SkillItem icon={symfony.src} skill="Symfony"/>
+            <SkillItem icon={react.src} skill="React"/>
+            <SkillItem icon={express.src} skill="Express"/>
+            <SkillItem icon={django.src} skill="Django"/>
+            <SkillItem icon={wordpress.src} skill="Wordpress"/>
+            <SkillItem icon={astro.src} skill="Astro"/>
+            <SkillItem icon={tailwind.src} skill="Tailwind"/>
         </SkillGrid>
 
         <SkillGrid title="Base de données">
-            <SkillItem icon="./img/logos/mysql.png" skill="MySQL"/>
-            <SkillItem icon="./img/logos/mongodb.png" skill="MongoDB"/>
+            <SkillItem icon={mysql.src} skill="MySQL"/>
+            <SkillItem icon={mongodb.src} skill="MongoDB"/>
         </SkillGrid>
 
         <SkillGrid title="Autres compétences informatique">
-            <SkillItem icon="./img/logos/xd.png" skill="Adobe XD"/>
-            <SkillItem icon="./img/logos/photoshop.png" skill="Photoshop"/>
-            <SkillItem icon="./img/logos/illustrator.png" skill="Illustrator"/>
-            <SkillItem icon="./img/logos/studioOne.png" skill="Studio One"/>
-            <SkillItem icon="./img/logos/cubase.png" skill="Cubase"/>
+            <SkillItem icon={xd.src} skill="Adobe XD"/>
+            <SkillItem icon={photoshop.src} skill="Photoshop"/>
+            <SkillItem icon={illustrator.src} skill="Illustrator"/>
+            <SkillItem icon={studioOne.src} skill="Studio One"/>
+            <SkillItem icon={cubase.src} skill="Cubase"/>
         </SkillGrid>
 
         <SkillGrid title="Autres compétences générales">
-            <SkillItem icon="./img/logos/english.png" skill="Anglais C2"/>
-            <SkillItem icon="./img/logos/guitare.png" skill="Guitare"/>
+            <SkillItem icon={english.src} skill="Anglais C2"/>
+            <SkillItem icon={guitar.src} skill="Guitare"/>
         </SkillGrid>
 
-        <SkillGrid title="En cours d'apprentissage">
-            <SkillItem icon="./img/logos/c_sharp.png" skill="C#"/>
-            <SkillItem icon="./img/logos/angular.png" skill="Angular"/>
+        <SkillGrid title="Je souhaite me former sur">
+            <SkillItem icon={cSharp.src} skill="C#"/>
+            <SkillItem icon={angular.src} skill="Angular"/>
+            <SkillItem icon={laravel.src} skill="Laravel"/>
+            <SkillItem icon={next.src} skill="NextJS"/>
+
         </SkillGrid>
     </div>
 

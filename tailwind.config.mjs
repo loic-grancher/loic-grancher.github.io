@@ -14,6 +14,11 @@ export default {
                 'professeurImage': "url('/src/assets/classroom.jpg')",
                 'flagsImage': "url('/src/assets/flags.jpg')",
                 'ottawaWinterImage': "url('/src/assets/ottawa_winter.jpg')",
+                'scholarfabImage': "url('/src/assets/webdesign.jpg')",
+                'tampereImage': "url('/src/assets/tampere_winter.jpg')",
+                'leedsImage': "url('/src/assets/leeds_beckett.jpg')",
+                'anfaImage': "url('/src/assets/anfa_capture.png')",
+                'sitev1Image': "url('/src/assets/background_forest.jpg')",
             
                
               }
