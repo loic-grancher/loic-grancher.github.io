@@ -50,7 +50,8 @@ import menuIcon from "../assets/logos/menu.png";
 </nav>
 <script>
     document.addEventListener("click", function (event) {
-        if (event.target?.id === "menuIcon") {
+        const target = event.target as HTMLTextAreaElement;
+        if (target.id === "menuIcon") {
             const menu = document.querySelector("#menu");
             const topNav = document.querySelector("#top_nav");
             const nav = document.querySelector("nav");
