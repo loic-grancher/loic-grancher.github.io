@@ -1,6 +1,7 @@
 ---
 import PageLayout from "../layout/PageLayout.astro"
 import IndexListItem from "../components/IndexListItem.astro"
+import IndexListHighlight from "../components/IndexListHighlight.astro"
 const title="Accueil & Contact" 
 import { Image } from "astro:assets"
 import linkedinLogo from "../assets/logos/LinkedIn_icon.svg.png"
@@ -10,9 +11,13 @@ import typescriptLogo from "../assets/logos/typescript.png"
 import photoProfil from "../assets/photo_profil.png"
 ---
 <PageLayout title={title}>
-    <div class="grid lg:grid-cols-2 p-10" >
+    <div class="px-10 text-xl flex flex-col text-center lg:text-left">
+        <p>Actuellement en formation de Développeur Web (BAC+2)</p>
+        <p>En recherche d'un contrat de professionalisation pour la rentree 2024</p>
+    </div>
+    <div class="grid lg:grid-cols-2 px-10" >
         <div class=" flex flex-col items-center items-center text-xl pt-10 ">
-            <ul class="flex flex-col gap-8 text-2xl">
+            <ul class="flex flex-col gap-8 text-2xl ">
                 <IndexListItem text="Loïc Grancher" icon="👾" />
                 <IndexListItem text="Developpeur Web Junior"  icon="💼"/>
                 <IndexListItem text="loic.grancher@gmail.com" icon="📧"/>

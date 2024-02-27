@@ -19,6 +19,7 @@ export default {
                 'leedsImage': "url('/src/assets/leeds_beckett.jpg')",
                 'anfaImage': "url('/src/assets/anfa_capture.png')",
                 'sitev1Image': "url('/src/assets/background_forest.jpg')",
+                'laManuImage': "url('/src/assets/laManuImage.jpg')",
             
                
               }
